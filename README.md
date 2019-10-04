@@ -9,10 +9,10 @@
 - Mobile first e responsivo
 
 ## A missão
-Desenvolver uma página, baseando-se no layout abaixo (PSD e PNG então pasta assets):
-![teste-front-end](assets/front-end.jpg)
-
+- Desenvolver uma página, baseando-se no layout abaixo (PSD e PNG então pasta assets):
 - Suporte nos navegadores: IE9+, Chrome, Firefox;
+
+![teste-front-end](assets/front-end.jpg)
 
 ## O que será avaliado?
 - Semântica Web.
