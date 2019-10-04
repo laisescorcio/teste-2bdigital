@@ -8,14 +8,14 @@
 - Utilizar HTML5, CSS3 e JS (Nós recomendados usar react.js ou vue.js)
 - Mobile first e responsivo
 
+## O que será avaliado ?
+- Semântica Web.
+- Organização do código.
+- Uso do Git.
+- Documentação.
+
 ## A missão
 - Desenvolver uma página, baseando-se no layout abaixo (PSD e PNG então pasta assets):
 - Suporte nos navegadores: IE9+, Chrome, Firefox;
 
 ![teste-front-end](assets/front-end.jpg)
-
-## O que será avaliado?
-- Semântica Web.
-- Organização do código.
-- Uso do Git.
-- Documentação.
