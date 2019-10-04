@@ -10,7 +10,7 @@
 
 ## A missão
 Desenvolver uma página, baseando-se no layout abaixo (PSD e PNG então pasta assets):
-![teste-front-end](assets/front-end.png)
+![teste-front-end](assets/front-end.jpg)
 
 - Suporte nos navegadores: IE9+, Chrome, Firefox;
 
