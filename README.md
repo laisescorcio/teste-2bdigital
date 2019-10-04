@@ -10,7 +10,7 @@
 
 ## A missão
 Desenvolver uma página, baseando-se no layout abaixo (PSD e PNG então pasta assets):
-![2bdigitaldev](assets/front-end.png)
+![teste-front-end](assets/front-end.png)
 
 - Suporte nos navegadores: IE9+, Chrome, Firefox;
 
