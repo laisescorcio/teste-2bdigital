@@ -2,6 +2,8 @@
 
 ## Teste para vaga de Desenvolvedora Front End Junior
 
+## Preview: https://laisescorcio.github.io/teste-2bdigital/
+
 ### Passos para iniciar o projeto
 
 1. Realizar o git clone do repositório no seu computador
