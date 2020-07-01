@@ -1,21 +1,11 @@
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub, ou BitBucket.
-- Siga as especificações abaixo.
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail claydson.fernando@gmail.com com o título **Teste Front-End**
+# Teste 2B Digital
 
-## Especificações técnicas
-- Utilizar HTML5, CSS3 e JS (Nós recomendados usar react.js ou vue.js)
-- Mobile first e responsivo
+## Teste para vaga de Desenvolvedora Front End Junior
 
-## O que será avaliado ?
-- Semântica Web.
-- Organização do código.
-- Uso do Git.
-- Documentação.
+### Passos para iniciar o projeto
 
-## A missão
-- Desenvolver uma página, baseando-se no layout abaixo (PSD e PNG então pasta assets):
-- Suporte nos navegadores: IE9+, Chrome, Firefox;
+1. Realizar o git clone do repositório no seu computador
 
-![teste-front-end](assets/front-end.jpg)
+2. Acessar a pasta e rodar "npm install"
+
+3. rodar o gulp "npm run gulp"

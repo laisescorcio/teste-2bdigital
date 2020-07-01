@@ -72,6 +72,10 @@ body header .header-links span a {
   text-decoration: none;
 }
 
+body header .header-links span a:hover {
+  text-decoration: underline;
+}
+
 body main .banner {
   background-color: #fcdb00;
 }
@@ -84,6 +88,7 @@ body main .banner-content {
 body main .banner-content-text-title {
   font-size: 20px;
   font-weight: 800;
+  padding-top: 65px;
   margin-bottom: 15px;
 }
 
@@ -99,7 +104,7 @@ body main .banner-content-text-speech {
 }
 
 body main .banner-content-text-icon {
-  margin-bottom: 15px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -264,6 +269,10 @@ body footer .footer-address a {
   text-decoration: none;
 }
 
+body footer .footer-address a:hover {
+  text-decoration: underline;
+}
+
 body footer .footer ul {
   display: flex;
   flex-direction: column;
@@ -274,6 +283,10 @@ body footer .footer ul {
 body footer .footer ul a {
   color: #ffffff;
   text-decoration: none;
+}
+
+body footer .footer ul a:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 600px) {
@@ -289,7 +302,6 @@ body footer .footer ul a {
   }
   body main .banner-content-text-icon {
     margin-top: 30px;
-    margin-bottom: 15px;
     display: flex;
     justify-content: flex-start;
   }
