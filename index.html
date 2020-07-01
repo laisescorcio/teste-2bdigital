@@ -11,13 +11,15 @@
     <header>
       <section class="header container">
         <div class="header-logo">
-          <img src="assets/fingerprint.png" alt="" />
-          <span>tinyone</span>
+          <a href="#">
+            <img src="assets/fingerprint.png" alt="" />
+            <span>tinyone</span>
+          </a>
         </div>
         <div class="header-links">
-          <span>Features</span>
-          <span>Support</span>
-          <span>Blog</span>
+          <span><a href="#">Features</a></span>
+          <span><a href="#">Support</a></span>
+          <span><a href="#">Blog</a></span>
         </div>
       </section>
     </header>
@@ -25,12 +27,12 @@
       <section class="banner">
         <div class="banner-content container">
           <div class="banner-content-text">
-            <div class="banner-content-text-title">
+            <h1 class="banner-content-text-title">
               Inspire your inspiration
-            </div>
-            <div class="banner-content-text-subtitle">
+            </h1>
+            <h2 class="banner-content-text-subtitle">
               Simple to use for your app, products showcase and yout inspiration
-            </div>
+            </h2>
             <div class="banner-content-text-speech">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
               vitae eros eget tellus tristique bibendum. Donec rutrum sed sem
@@ -38,9 +40,9 @@
               quis arcu et eros porta lobortis sit
             </div>
             <div class="banner-content-text-icon">
-              <img src="assets/apple.svg" alt="" style="width: 35px;" />
-              <img src="assets/android.svg" alt="" style="width: 35px;" />
-              <img src="assets/windows.svg" alt="" style="width: 35px;" />
+              <img src="assets/apple.svg" alt="" />
+              <img src="assets/android.svg" alt="" />
+              <img src="assets/windows.svg" alt="" />
             </div>
           </div>
           <div class="banner-content-image">
@@ -50,8 +52,8 @@
       </section>
       <section class="features container">
         <div class="features-text">
-          <div class="features-text-title">Tinyone features</div>
-          <div class="features-text-speech">
+          <h1 class="features-text-title">Tinyone features</div>
+          <h1 class="features-text-speech">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis
             venenatis.
@@ -125,15 +127,22 @@
     </main>
     <footer>
       <section class="contact container">
-        <div class="contact-title">Keep in touch with us</div>
-        <span
-          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+        <h3 class="contact-title">Keep in touch with us</h3>
+        <span class="contact-text">Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Praesent
           vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis
-          venenatis.</span
-        >
+          venenatis.</span>
         <div class="contact-submit">
-          <input type="text" placeholder="Enter your email to update" />
-          <button>Submit</button>
+          <div class="contact-submit-info">
+            <input class="contact-submit-input" type="text"
+              placeholder="Enter your email to update" />
+            <span class="contact-submit-input-validation"></span>
+          </div>
+          <button class="contact-submit-button">Submit</button>
+        </div>
+        <div class="contact-sent">
+          <h3>Done!</h3>
+          <span>Your e-mail address was submitted successfully</span>
         </div>
         <div class="contact-social">
           <img src="assets/facebook.png" alt="" />
@@ -149,9 +158,7 @@
             <br />
             <a href="mailto:name@email.com">contact@halovietnam.com</a>
             <br />
-            <a href="https://wa.me/84435149182" target="_blank"
-              >+844 35149182</a
-            >
+            <a href="https://wa.me/84435149182" target="_blank">+844 35149182</a>
           </span>
         </div>
         <ul class="footer-shop">
@@ -177,5 +184,15 @@
         </ul>
       </section>
     </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-migrate-3.3.0.js"
+      integrity="sha256-LHirvf0Kdg641fjejw4QdlIPPYKtSqHoDUpUUeTnHMs="crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

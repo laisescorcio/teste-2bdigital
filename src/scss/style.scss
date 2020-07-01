@@ -37,21 +37,33 @@ body {
       font-weight: bold;
       &-logo {
         display: flex;
-        align-items: center;
         font-weight: bold;
         height: 130px;
-        img {
-          width: 43px;
-          margin-right: 10px;
-        }
-        span {
-          font-size: 20px;
+
+        a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: #000000;
+          img {
+            width: 43px;
+            margin-right: 10px;
+          }
+          span {
+            font-size: 20px;
+          }
         }
       }
       &-links {
-        width: 200px;
+        width: 160px;
         display: flex;
         justify-content: space-between;
+        span {
+          a {
+            color: #000000;
+            text-decoration: none;
+          }
+        }
       }
     }
   }
@@ -71,6 +83,7 @@ body {
           &-subtitle {
             font-size: 15px;
             margin-bottom: 15px;
+            line-height: 20px;
           }
           &-speech {
             font-size: 12px;
@@ -82,6 +95,7 @@ body {
             justify-content: space-evenly;
 
             img {
+              width: 35px;
               margin-right: 15px;
             }
           }
@@ -125,10 +139,11 @@ body {
             &-title {
               font-size: 18px;
               font-weight: 600;
-              margin-bottom: 10px;
+              margin-bottom: 20px;
             }
             &-speech {
               color: #9a9a9a;
+              line-height: 20px;
             }
           }
         }
@@ -144,7 +159,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 60px;
+      margin-bottom: 135px;
       &-title {
         color: #fcdb00;
         font-weight: 700;
@@ -156,24 +171,62 @@ body {
       }
       &-submit {
         display: flex;
-        margin-bottom: 40px;
+        justify-content: space-between;
+
         width: 100%;
-        input {
-          height: 50px;
-          width: 190px;
-          margin-right: 5px;
-          padding: 0 10px;
-          border: 0;
-          border-radius: 5px;
+
+        &-info {
+          display: flex;
+          flex-direction: column;
+          input {
+            height: 60px;
+            width: 190px;
+            margin-right: 5px;
+            padding: 0 10px;
+            border: 0;
+            border-radius: 5px;
+          }
+
+          span {
+            margin-top: 5px;
+            color: #d7182a;
+            font-size: 12px;
+          }
         }
         button {
           width: 100px;
+          height: 60px;
           text-transform: uppercase;
           font-weight: 700;
           background-color: #fcdb00;
           border: 0;
           border-radius: 5px;
         }
+      }
+
+      &-sent {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h3 {
+          color: #fcdb00;
+        }
+
+        span {
+          width: 300px;
+          color: #898989;
+          font-size: 16px;
+          margin: 0 auto;
+          padding: 20px 20px;
+        }
+      }
+
+      &-social {
+        width: 240px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
       }
     }
 
@@ -261,12 +314,6 @@ body {
             width: 130px;
           }
         }
-
-        // &-social {
-        //   img {
-        //     margin-right: 20px;
-        //   }
-        // }
       }
 
       .footer {
@@ -294,18 +341,157 @@ body {
 
     header {
       .header {
+        &-logo {
+          a {
+            span {
+              font-size: 32px;
+            }
+          }
+        }
         &-links {
           width: 300px;
+          a {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+
+    main {
+      .banner {
+        &-content {
+          &-text {
+            &-title {
+              font-size: 28px;
+              line-height: 40px;
+            }
+            &-subtitle {
+              font-size: 20px;
+            }
+            &-speech {
+              font-size: 16px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+      .features {
+        &-text {
+          max-width: 710px;
+          margin: 0 auto;
+          &-title {
+            font-size: 32px;
+          }
+          &-speech {
+            font-size: 20px;
+          }
+        }
+
+        &-content {
+          &-box {
+            .features-box-description {
+              &-title {
+                font-size: 22px;
+              }
+              &-speech {
+                font-size: 16px;
+              }
+            }
+          }
         }
       }
     }
 
     footer {
       .contact {
+        &-title {
+          font-size: 32px;
+        }
+        span {
+          font-size: 20px;
+        }
         &-submit {
           input {
             width: 580px;
+            font-size: 16px;
           }
+          button {
+            font-size: 16px;
+          }
+        }
+
+        &-sent {
+          h3 {
+            font-size: 32px;
+          }
+
+          span {
+            width: 500px;
+          }
+        }
+      }
+
+      .footer {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    .container {
+      max-width: 700px;
+    }
+    main {
+      .banner {
+        &-content {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          &-text {
+            width: 382px;
+
+            &-subtitle {
+              line-height: 25px;
+            }
+          }
+          &-image {
+            display: block;
+          }
+        }
+      }
+    }
+    footer {
+      .contact {
+        max-width: 740px;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    .container {
+      max-width: 800px;
+    }
+
+    main {
+      .banner {
+        &-content {
+          &-text {
+            width: 407px;
+            &-title {
+              font-size: 32px;
+            }
+          }
+        }
+      }
+      .features {
+        &-content {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
         }
       }
     }
@@ -315,28 +501,18 @@ body {
 @media (min-width: 1024px) {
   body {
     .container {
-      max-width: 940px;
+      max-width: 900px;
     }
+
     main {
       .banner {
         &-content {
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
-          padding: 40px 0;
           &-text {
-            width: 305px;
+            width: 415px;
+            &-title {
+              font-size: 32px;
+            }
           }
-          &-image {
-            display: block;
-          }
-        }
-      }
-
-      .features {
-        &-content {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
         }
       }
     }
